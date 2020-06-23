@@ -60,9 +60,9 @@
       		
     	</ul>
     	
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="검색">
-      <button class="btn btn-success my-2 my-sm-0" type="button">검색</button>
+    <form action="./main.jsp" method="get" class="form-inline my-2 my-lg-0" >
+      <input class="form-control mr-sm-2" type="text" name="search" placeholder="검색">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">검색</button>
     </form>
   </div>
 </nav>
@@ -137,8 +137,23 @@
 </div>
 <br><br>
 <div class="container">
-  <h2>상품 리스트</h2>          
-  <table class="table table-hover text-center">
+	<div class="row">
+		<div class="col-sm-8">
+			<h2>상품 리스트</h2>
+		</div>
+		<%
+    			if(userID != null) {		
+    	%>
+		<div class="col-sm-4">
+			<form class="float-right" method="get" action="productWrite.jsp?userID=<%=userID %>">
+				<input type="submit" class="btn btn-primary" value="상품 등록">
+			</form>
+		</div>
+		<%
+    			}
+		%>
+	</div>
+	<table class="table table-hover text-center">
     <thead>
       <tr>
         <th>상품 이미지</th>

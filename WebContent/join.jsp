@@ -13,7 +13,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
-  		<a class="navbar-brand" href="javascript:void(0)">경매장터</a>
+  		<a class="navbar-brand" href="main.jsp">경매장터</a>
   	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
     	<span class="navbar-toggler-icon"></span>
   	</button>
@@ -38,8 +38,7 @@
   </div>
 </nav>
 <div class="container">
-	<div class="col-lg-4"></div>
-	<div class="col-lg-4">
+	<div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
 		<div class="jumbotron" style="padding-top: 20px;">
 			<form method="post" action="joinAction.jsp">
 				<h3 style="text-align: center;">회원가입 화면</h3>
@@ -54,11 +53,11 @@
 				</div>
 				<div class="form-group" style="text-align: center;">
 					<div class="btn-group" data-toggle="buttons">
-						<label class="btn btn-pprimary active">
+						<label class="btn btn-primary">
 							<input type="radio" name="userGender" autocomplete="off" value="남자" checked>남자
 						</label>
-						<label class="btn btn-pprimary">
-							<input type="radio" name="userGender" autocomplete="off" value="여자" checked>여자
+						<label class="btn btn-primary">
+							<input type="radio" name="userGender" autocomplete="off" value="여자">여자
 						</label>
 					</div>
 				</div>

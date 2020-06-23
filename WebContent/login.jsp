@@ -24,7 +24,7 @@
        	 		<a class="nav-link active" href="login.jsp">로그인</a>
      		</li>
      	 	<li class="nav-item">
-      	  		<a class="nav-link" href="javascript:void(0)">회원가입</a>
+      	  		<a class="nav-link" href="join.jsp">회원가입</a>
      	 	</li>
       		<li class="nav-item">
        	 		<a class="nav-link" href="javascript:void(0)">링크3 </a>
@@ -38,8 +38,7 @@
   </div>
 </nav>
 <div class="container">
-	<div class="col-lg-4"></div>
-	<div class="col-lg-4">
+	<div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
 		<div class="jumbotron" style="padding-top: 20px;">
 			<form method="post" action="loginAction.jsp">
 				<h3 style="text-align: center;">로그인 화면</h3>
@@ -55,8 +54,6 @@
 	</div>
 	<div class="col-lg-4"></div>
 </div>
-
-
 
 </body>
 </html>
