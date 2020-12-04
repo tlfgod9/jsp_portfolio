@@ -58,7 +58,7 @@
 				} else {
 					PrintWriter script = response.getWriter();
 					script.println("<script>");
-					script.println("location.href = '########'");
+					script.println("location.href = 'myPage.jsp'");
 					script.println("</script>");
 				}
 			}

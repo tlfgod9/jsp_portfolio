@@ -17,7 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<%
+	<%	
 		String userID = null;
 		if(session.getAttribute("userID") != null) {
 			userID = (String)session.getAttribute("userID");
@@ -30,7 +30,7 @@
 			script.println("</script>");
 		} else {
 
-			if(fbbs.getFbbsTitle() == null || fbbs.getFbbsContent() == null) {
+			if(request.getParameter("fbbsTitle") == null || request.getParameter("fbbsContent") == null) {
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
 				script.println("alert('입력이 안 된 사항이 있습니다.')");

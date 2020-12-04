@@ -49,7 +49,7 @@
        	 			<a class="nav-link" href="logoutAction.jsp">로그아웃</a>
      			</li>
      	 		<li class="nav-item">
-      	 	 		<a class="nav-link" href="join.jsp">회원관리</a>
+      	 	 		<a class="nav-link" href="myPage.jsp">마이페이지</a>
      	 		</li>
       			<li class="nav-item">
        	 			<a class="nav-link" href="fbbs.jsp">자유 게시판 </a>

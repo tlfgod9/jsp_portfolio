@@ -51,6 +51,7 @@
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="이름" name="userName" maxlength="20">
 				</div>
+				
 				<div class="form-group" style="text-align: center;">
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-primary">
@@ -62,13 +63,15 @@
 					</div>
 				</div>
 				<div class="form-group">
+					<input type="tel" class="form-control" name="tel" maxlength="20" placeholder="연락처">
+				</div>
+				<div class="form-group">
 					<input type="email" class="form-control" placeholder="이메일" name="userEmail" maxlength="20">
 				</div>
 				<input type="submit" class="btn btn-primary form-control" value="회원가입">
 			</form>
 		</div>
 	</div>
-	<div class="col-lg-4"></div>
 </div>
 
 

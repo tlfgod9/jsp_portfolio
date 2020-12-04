@@ -35,7 +35,7 @@
 		}
 	%>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
-  		<a class="navbar-brand" href="javascript:void(0)">경매장터</a>
+  		<a class="navbar-brand" href="main.jsp">경매장터</a>
   	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
     	<span class="navbar-toggler-icon"></span>
   	</button>
@@ -100,7 +100,7 @@
 				%>
 					<tr>
 						<td><%= list.get(i).getFbbsID() %></td>
-						<td><a href="view.jsp?fbbsID=<%= list.get(i).getFbbsID() %> "><%= list.get(i).getFbbsTitle() %></a></td>
+						<td><a href="view.jsp?fbbsID=<%= list.get(i).getFbbsID() %> "><%= list.get(i).getFbbsTitle()%></a></td>
 						<td><%= list.get(i).getUserID() %></td>
 						<td><%= list.get(i).getFbbsDate().substring(0, 11) + list.get(i).getFbbsDate().substring(11, 13) + "시 " + list.get(i).getFbbsDate().substring(14, 16) + "분 " %></td>
 					</tr>

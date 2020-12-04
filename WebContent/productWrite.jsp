@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="product.ProductDAO" %>
+<%@ page import="product.Product" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,7 +52,7 @@
 			<form method="post" action="productWriteAction.jsp">
 				<h3 style="text-align: center;">상품 등록</h3>
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="<%=productDAO.getUserName(userID) %>" name="uName" maxlength="20">
+					<input type="text" class="form-control" readonly placeholder="<%=productDAO.getUserName(userID) %>" name="uName" maxlength="20">
 				</div>
 				<div class="form-group">
 					<select name="category" class="form-control">
@@ -68,13 +69,11 @@
 					<input type="text" class="form-control" placeholder="상품명" name="pName" maxlength="20">
 				</div>
 				<div class="form-group">
-					입찰가&nbsp;<input type="number" name="big" maxlength="10" value="0"> 원
+					입찰가&nbsp;<input type="number" name="bid" maxlength="10" placeholder="0" step="100"> 원
 					&nbsp;&nbsp;&nbsp;
-					<input type="number" placeholder="즉시 판매가" name="price" maxlength="10"> 원
+					<input type="number" placeholder="즉시 판매가" name="price" maxlength="10" step="100"> 원
 				</div>
-				<!-- <div class="form-group">
-					<input type="datetime-local" name="inputDate" class="form-control">
-				</div> -->
+				
 				<div class="form-group">
 					<label>경매 마감일</label>
 					<input type="datetime-local" name="outputDate" class="form-control">
