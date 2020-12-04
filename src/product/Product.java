@@ -12,7 +12,14 @@ public class Product {
 	private String outputDate;
 	private String description;
 	private String image;
+	private String userID;
 	
+	public String getUserID() {
+		return userID;
+	}
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
 	public int getpID() {
 		return pID;
 	}
